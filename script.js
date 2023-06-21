@@ -12,4 +12,18 @@ function handleCellClick(cell, cellIndex) {
   if (board[cellIndex] !== '' || !gameActive) {
     return;
   }
+  
+  board[cellIndex] = currentPlayer;
+  cell.innerText = currentPlayer;
+  
+  if (checkForWin()) {
+    endGame(false);
+    return;
+  }
+  
+  if (isBoardFull()) {
+    endGame(true);
+    return;
+  }
+  currentPlayer = (currentPlayer === 'X') ? 'O' : 'X'
 }
