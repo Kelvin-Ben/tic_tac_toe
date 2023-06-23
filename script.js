@@ -103,3 +103,12 @@ function checkGameOver() {
   }
 }
 
+// function to display the game result
+function displayResult(winner) {
+  const resultText = document.querySelector('.text');
+  if ( winner === 'tie') {
+    resultText.textContent = "It's a tie";
+  } else {
+    resultText.textContent = `Player ${winner} wins`;
+  }
+}
