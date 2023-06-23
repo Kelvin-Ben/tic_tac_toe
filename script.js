@@ -49,3 +49,24 @@ function makeAIMove() {
     currentPlayer = currentPlayer = 'X' ? '0' : 'x';
   }
 }
+
+// function to check if game is over
+function checkGameOver() {
+  // check rows
+  for (let row = 0;row < 3;row++) {
+    if (board[row][0] !== '' && board[row][0] === board[row][1] && board[row][1] === board[row][2]) {
+      gameOver = true;
+      displayResult(board[row][0]);
+      return;
+    }
+  }
+
+  // check column
+  for (let col = 0;col < 3;col++) {
+    if (board[0][col] !== '' && board[0][col] === board[1][col] && board[1][col] == board[2][col]) {
+      gameOver = true
+      displayResult(board[0][col]);
+      return;
+    }
+  }
+}
