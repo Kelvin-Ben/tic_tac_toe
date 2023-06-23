@@ -69,4 +69,17 @@ function checkGameOver() {
       return;
     }
   }
+
+  // check for diagonals
+  if (board[0][0] !== '' && board[0][0] === board[1][1] && board[1][1] === board[2][2]) {
+    gameOver = true;
+    displayResult(board[0][0]);
+    return;
+  }
+
+  if (board[0][2] !== '' && board[0][2] === board[1][1] && board[1][1] === board[2][0]) {
+    gameOver = true;
+    displayResult(board[0][2]);
+    return;
+  }
 }
