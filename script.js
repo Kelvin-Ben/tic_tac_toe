@@ -82,4 +82,24 @@ function checkGameOver() {
     displayResult(board[0][2]);
     return;
   }
+
+  // check if the board is full
+  let isBoardFull = true;
+  for (let row = 0;row < 3;row++) {
+    for (let col = 0;col < 3;col++) {
+      if (board[row][col] === '') {
+        isBoardFull = false;
+        break;
+      }
+    }
+    if (!isBoardFull) {
+      break;
+    }
+  }
+
+  if (isBoardFull) {
+    gameOver = true;
+    displayResult('tie');
+  }
 }
+
