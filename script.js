@@ -23,3 +23,29 @@ function handleMove(cellId) {
       makeAIMove();
   }
 }
+
+// function to make AI moves
+function makeAIMove() {
+  const emptyCells = [];
+
+  // collect all empty cells
+  for (let row = 0;row < 3;row++) {
+    for (let col = 0;col < 3;col++) {
+      if (board[row][col] === '') {
+        emptyCells.push({ row, col });
+      }
+    }
+  }
+
+  // select random empty cell
+  if (emptyCells.length > 0) {
+    const randomIndex = Math.floor(Math.random() * emptyCells.length);
+    const { row, col } = emptyCells[randomIndex];
+
+    board[row][col] = currentPlayer;
+    document.getElementById((row * 3) + col + 1).textContent = currentPlayer;
+
+    checkGameOver();
+    currentPlayer = currentPlayer = 'X' ? '0' : 'x';
+  }
+}
