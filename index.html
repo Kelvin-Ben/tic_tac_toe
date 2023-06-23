@@ -9,25 +9,26 @@
   <body>
     <table>
       <tr>
-        <td class="cell" id="1"></td>
-        <td class="cell" id="2"></td>
-        <td class="cell" id="3"></td>
+        <td class="cell" id="1" onclick="handleMove(0, 0)"></td>
+        <td class="cell" id="2" onclick="handleMove(0, 1)"></td>
+        <td class="cell" id="3" onclick="handleMove(0, 2)"></td>
       </tr>
       <tr>
-        <td class="cell" id="4"></td>
-        <td class="cell" id="5"></td>
-        <td class="cell" id="6"></td>
+        <td class="cell" id="4" onclick="handleMove(1, 0)"></td>
+        <td class="cell" id="5" onclick="handleMove(1, 1)"></td>
+        <td class="cell" id="6" onclick="handleMove(1, 2)"></td>
       </tr>
       <tr>
-        <td class="cell" id="7"></td>
-        <td class="cell" id="8"></td>
-        <td class="cell" id="9"></td>
+        <td class="cell" id="7" onclick="handleMove(2, 0)"></td>
+        <td class="cell" id="8" onclick="handleMove(2, 1)"></td>
+        <td class="cell" id="9" onclick="handleMove(2, 2)"></td>
       </tr>
     </table>
     <div class="endgame">
+      <div class="overlay"></div>
       <div class="text"></div>
     </div>
-    <button onclick="startGame()">Replay</button>
+    <button class="btn_replay" onclick="startGame()">Replay</button>
     <script src="script.js"></script>
   </body>
 </html>
