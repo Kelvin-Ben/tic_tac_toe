@@ -26,3 +26,7 @@ To play the Tic Tac Toe Game locally, follow these steps:
 - HTML
 - CSS
 - JavaScript
+### Contributing
+ Contributions to this Tic Tac Toe Game are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
+### License
+This project is licensed under the [MIT License](https://mit-license.org/)
