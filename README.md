@@ -19,3 +19,10 @@ To play the Tic Tac Toe Game locally, follow these steps:
 - If a player achieves a winning combination, the game ends, and the winning player is announced.
 - If all spaces on the board are filled and no player has won, the game ends in a draw.
 - Click the ``Reset`` button to start a new game.
+### Customization
+- You can easily customize the symbols used for players (X and O) by modifying the corresponding variables in the JavaScript code.
+- You can also customize the appearance of the game board and symbols by modifying the CSS styles.
+### Technologies Used
+- HTML
+- CSS
+- JavaScript
