@@ -12,3 +12,10 @@ To play the Tic Tac Toe Game locally, follow these steps:
 - Clone the repository: ```git clone git@github.com:Kelvin-Ben/tic_tac_toe.git ```
 - Navigate to the project directory: ``` cd tic_tac_toe ```
 - Open the ``index.html`` file in your preferred web browser.
+### How to Play
+- The game starts with Player 1 (X) and Player 2 (O) taking turns to mark an empty space on the board.
+- Each player clicks on an empty space to place their symbol. Once placed, the turn switches to the other player.
+- The goal is to get three of your symbols in a row, either horizontally, vertically, or diagonally.
+- If a player achieves a winning combination, the game ends, and the winning player is announced.
+- If all spaces on the board are filled and no player has won, the game ends in a draw.
+- Click the ``Reset`` button to start a new game.
