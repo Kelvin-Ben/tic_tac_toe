@@ -13,7 +13,7 @@ To play the Tic Tac Toe Game locally, follow these steps:
 - Navigate to the project directory: ``` cd tic_tac_toe ```
 - Open the ``index.html`` file in your preferred web browser.
 ### How to Play
-- The game starts with Player 1 (X) and Player 2 (O) taking turns to mark an empty space on the board.
+- The game starts with Player 1 (X) and Player 2 (O) taking turns marking an empty space on the board.
 - Each player clicks on an empty space to place their symbol. Once placed, the turn switches to the other player.
 - The goal is to get three of your symbols in a row, either horizontally, vertically, or diagonally.
 - If a player achieves a winning combination, the game ends, and the winning player is announced.
@@ -30,3 +30,5 @@ To play the Tic Tac Toe Game locally, follow these steps:
  Contributions to this Tic Tac Toe Game are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
 ### License
 This project is licensed under the [MIT License](https://mit-license.org/)
+### Acknowledgements
+- The Tic Tac Toe Game was inspired by [The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-tic-tac-toe)
